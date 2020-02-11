@@ -1,0 +1,141 @@
+.ex-1-square {
+    transition: 2.5s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square {
+    transition: 3s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-3-square {
+    transition: 0.5s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: 1s;
+    opacity: 1;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: 1s;
+}
+
+.ex-5-square:hover {
+    transform: scale(1.5);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+..ex-7-img {
+    transition: 3s;
+}
+
+..ex-7-img:hover {
+    filter: grayscale(50%) sepia(50%);
+}
+
+..ex-8-img {
+    transition-duration: 1s;
+}
+
+..ex-8-img:hover {
+    border-radius: 10px;
+    filter: brightness(.5) contrast(.5);
+}
+
+..ex-9-img {
+    transition: 1s;
+}
+
+..ex-9-img:hover {
+    border-radius: 20px;
+    filter: grayscale(50%) sepia(50%);
+    transform: scale(1.5);
+}
+
+.ex-10-icon {
+    animation: gira 1s linear infinite;
+}
+
+@keyframes gira {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.ex-11-icon:hover {
+    animation: giraPazzo 2s linear;
+}
+
+@keyframes giraPazzo {
+    0% { transform: rotate(0deg);}
+    80% { transform: rotate(310deg);}
+    100% { transform: rotate(0deg);}
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: top-space-move 3s linear infinite;
+}
+
+@keyframes top-space-move {
+    0% { left: 10%;}
+    50% { left: calc(100% - 60px);}
+    100% { left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: bottom-space-move 3s linear infinite;
+}
+
+@keyframes bottom-space-move {
+    0% { right: 20%;}
+    40% { right: calc(100% - 60px);}
+    85.3% { right: 0;}
+    100% { right: 20%;}
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: move-around-top 3s linear;
+}
+
+@keyframes move-around-top {
+    0% { left: 10%; top:-10px}
+    33% { left: calc(100% - 30px); top:-10px}
+    46% { left: calc(100% - 30px); top:100%}
+    83% { left: 0; top:100%}
+    96% { left: -15px; top:-10px}
+    100% { left: 10%; top:-10px}
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: move-around-bottom 3s linear;
+}
+
+@keyframes move-around-bottom {
+    0% { right: 20%; bottom:-10px;}
+    30% { right: calc(100% - 50px); bottom:-10px;}
+    43% { right: calc(100% - 50px); bottom:100%;}
+    80% { right: 0; bottom:100%;}
+    93% { right: -15px; bottom:-10px;}
+    100% { right: 20%; bottom:-10px;}
+}
